@@ -7,7 +7,7 @@ BASEDIR = os.path.dirname(PROJDIR)
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = [u"129.132.45.56"]
+ALLOWED_HOSTS = [u"192.168.0.59"]
 
 ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
@@ -74,7 +74,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     "django.contrib.messages.middleware.MessageMiddleware",
-    #'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
@@ -105,8 +105,8 @@ ACCOUNT_ACTIVATION_DAYS = 7  # One-week activation window for registration
 WSGI_APPLICATION = 'recordserver.wsgi.application'
 
 X_FRAME_OPTIONS = "DENY"
-CSRF_COOKIE_HTTPONLY = True
-CSRF_COOKIE_SECURE = True
+#CSRF_COOKIE_HTTPONLY = True
+#CSRF_COOKIE_SECURE = True
 #SESSION_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
 SECURE_BROWSER_XSS_FILTER = True

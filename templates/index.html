@@ -5,10 +5,10 @@
 {% block header %}{% endblock %}
 
 {% block content %}
-<p>Please login to view your projects and associated records.</p>
 
 {% if user.is_anonymous %}
-<p><b><a href="{% url 'sumatra-project-list' %}">List of public projects</a></b> or <b><a href="{% url 'login' %}">Login</a></b></p>
+<p>Please login to view your projects and associated records.</p>
+<p><b><a href="{% url 'login' %}">Login</a></b></p>
 {% else %}
 <p><b><a href="{% url 'sumatra-project-list' %}">List of projects</a></b></p>
 {% endif %}

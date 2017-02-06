@@ -40,8 +40,9 @@ nginx_conf=${nginx_conf//server_ip/$SERVER_IP}
 nginx_conf=${nginx_conf//cwd/$(pwd)}
 echo "$nginx_conf" > recordserver_nginx.conf
 
+sudo rm /etc/nginx/sites-enabled/recordserver_nginx.conf
 sudo ln -s $(pwd)"/recordserver_nginx.conf" /etc/nginx/sites-enabled/
 
 python manage.py migrate
 python manage.py createsuperuser
-python manage.py collectstatic
+python manage.py collectstatic --noinput

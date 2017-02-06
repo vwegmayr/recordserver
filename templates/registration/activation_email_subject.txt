@@ -1,0 +1,1 @@
+[smtserve] Account Activation – {{ site }}

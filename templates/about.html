@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+<p>Welcome to the Record Store.
+</p>
+
+<p>{% for pkg, ver in version.items %}
+    <span class="label label-info">{{pkg}} version: {{ver}}</span>{% endfor %}
+</p>
+{% endblock %}

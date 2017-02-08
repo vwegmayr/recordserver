@@ -4,7 +4,7 @@ import os
 PROJDIR = os.path.dirname(__file__)
 BASEDIR = os.path.dirname(PROJDIR)
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = [u"80.218.0.179",u"192.168.0.59",u"127.0.0.1"]

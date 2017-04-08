@@ -6,6 +6,7 @@ virtualenv venv
 source venv/bin/activate
 
 pip install configparser
+pip install pyaml
 pip install gitpython
 pip install git+http://github.com/vwegmayr/sumatra
 pip install git+https://github.com/vwegmayr/sumatra_server
